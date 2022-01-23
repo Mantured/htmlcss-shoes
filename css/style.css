@@ -3,7 +3,7 @@
     padding: 0;
     font-weight: 700;
     box-sizing: border-box;
-    font-family: 'Relaway', 'Alfa Slab One' ;
+    font-family: 'Relaway', 'Alfa Slab One';
 } 
 
 nav{
@@ -17,11 +17,11 @@ nav{
 ul li {
     z-index: 3;
     line-height: 50px;
-    margin: 30px 30px;
+    margin: 30px;
     border-radius: 50%;
     list-style-type: none;
     display: inline-block;
-    padding: 11px 22px;
+    padding: 12px 22px;
     background-color: white;
 } 
 
@@ -30,6 +30,17 @@ header ul li a{
     font-size: 2em;
     text-decoration: none;
 } 
+
+a:hover{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+a:active{
+    text-decoration: none;
+    color:fuchsia;
+}
+
 
 div {
     width:100vw;
@@ -46,7 +57,7 @@ div img {
     height: 55%;
     position:absolute;
     object-fit: contain;
-    transform: translate(-50%, -50%);
+    transform: rotate(0.05turn) translate(-50%, -50%);
 }
 
 div h1{
@@ -60,11 +71,14 @@ div h1{
     transform:translateX(-50%);
 }
 
+
 .clearfix::after{
     clear: both;
     content: "";
     display: table;
 }
+
+
 
 /* gestione colori  sfondo*/
 
@@ -89,4 +103,12 @@ div h1{
 .text-green{
     color: green;
 }
+/* 
 
+non funziona, il comando viene preso ma funziona solo se metto "hover attivato " sul inspector
+
+img:hover{
+    transform: scale(30%);
+    display: inline;
+}
+ */
